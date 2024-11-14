@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./responsive_car_web.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>ROYAL CARS</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar_bg text-white px-0 p-1 d-none d-sm-block p-2">
+        <div class="container d-sm-flex justify-content-between">
+          <div>
+            <i class="fas fa-phone-alt"></i> +012 345 6789
+            <span class="mx-2">|</span>
+            <span><i class="fas fa-envelope"></i> mail@domain.com</span>
+          </div>
+          <div>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="px-sm-5">
+      <div id="right-square"></div>
+      <div id="left-square"></div>
+      <nav
+        class="navbar navbar-expand-sm w-100 bg_main_color p-3 px-4 d-flex justify-content-between"
+      >
+        <h2
+          class="m-0 text-center txt_second_color text-nowrap font-size-22 fw-bolder"
+        >
+          ROYAL CARS
+        </h2>
+        <button
+          id="hamburgerMenu"
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleMenuContent"
+          aria-controls="navbarToggleMenuContent"
+          aria-expanded="false"
+          aria-label="Menu navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse bg_main_color w-100 fit-content"
+          id="navbarToggleMenuContent"
+        >
+          <ul
+            class="m-0 p-4 bg_main_color list-unstyled fw-bold text-white d-flex flex-column justify-content-center align-items-start gap-12"
+          >
+            <li class="txt_second_color">
+              <a href="#home" class="nav-link active txt_second_color">HOME</a>
+            </li>
+            <li><a href="#service" class="nav-link text-white">SERVICE</a></li>
+            <li><a href="#contact" class="nav-link text-white">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- Navbar content (collapsed on xs/sm screens, visible on md and larger) -->
+        <div
+          class="collapse navbar-collapse bg_main_color d-sm-flex justify-content-end"
+          id="navbarContentList"
+        >
+          <ul
+            class="m-0 p-0 bg_main_color list-unstyled fw-bold text-white d-flex justify-content-end align-items-start gap-18"
+          >
+            <li>
+              <a href="#home" class="nav-link active txt_second_color">HOME</a>
+            </li>
+            <li><a href="#service" class="nav-link text-white">SERVICE</a></li>
+            <li><a href="#contact" class="nav-link text-white">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <form class="row mt-3 px-2">
+        <div class="col-sm-3 mb-3">
+          <select class="form-select rounded-0">
+            <option selected>Pickup Location</option>
+            <option value="1">Location 1</option>
+            <option value="2">Location 2</option>
+            <option value="3">Location 3</option>
+          </select>
+        </div>
+
+        <div class="col-sm-3 mb-3">
+          <select class="form-select rounded-0">
+            <option selected>Drop Location</option>
+            <option value="1">Location 1</option>
+            <option value="2">Location 2</option>
+            <option value="3">Location 3</option>
+          </select>
+        </div>
+
+        <div class="col-sm-3 mb-3">
+          <select class="form-select rounded-0">
+            <option selected>Select A Car</option>
+            <option value="1">Car 1</option>
+            <option value="2">Car 2</option>
+            <option value="3">Car 3</option>
+          </select>
+        </div>
+
+        <div class="col-sm-3 mb-3">
+          <button
+            type="button"
+            class="btn rounded-0 text-white bg_second_color w-100 btn-no-hover"
+          >
+            Search
+          </button>
+        </div>
+      </form>
+      <section
+        id="welcome_to_royal_cars"
+        class="d-flex flex-column justify-content-center align-items-center px-5"
+      >
+        <!-- Header Section  -->
+        <div
+          id="home"
+          class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5"
+        >
+          <h1 class="services_header_h1">01</h1>
+          <h2 class="services_header_h2">
+            WELCOME TO <span class="txt_second_color">ROYAL CARS</span>
+          </h2>
+        </div>
+        <!-- Cars poster and description Section -->
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center gap-18 mt-2"
+        >
+          <img
+            src="./assets/pics/01.jpg"
+            alt="Cars lined up"
+            class="img-fluid"
+          />
+          <p class="font-size-10 text-center px-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit culpa
+            nemo molestias id quam voluptatem, possimus vel, delectus minus
+            autem deserunt ratione tenetur? Quasi maxime ipsum autem ut soluta!
+            Nulla asperiores eveniet repudiandae aut a, quo doloribus saepe
+            minus, sint at impedit voluptatibus itaque! Qui, illum, ullam
+            repellendus quo nesciunt dolore molestias sint ipsam excepturi
+            perspiciatis amet similique ut delectus voluptatibus ipsum
+            asperiores assumenda quos!
+          </p>
+        </div>
+        <!-- Services Section -->
+        <div
+          class="container d-flex justify-content-center align-items-center my-4 mx-0 px-0"
+        >
+          <div class="row w-100">
+            <div class="col-sm-4 mb-4">
+              <div class="px-0 py-4 d-flex align-items-center bg-light">
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-headset fs-1"></i>
+                </div>
+                <p class="fw-bolder text-dark ms-3 mb-0">
+                  24/7 CAR RENTAL SUPPORT
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4 mb-4">
+              <div class="px-0 py-4 d-flex align-items-center bg_main_color">
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-car-front-fill fs-1"></i>
+                </div>
+                <p class="fw-bolder text-white ms-3 mb-0">
+                  CAR RESERVATION ANYTIME
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4 mb-4">
+              <div class="px-0 py-4 d-flex align-items-center bg-light">
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-geo-alt-fill fs-1"></i>
+                </div>
+                <p class="fw-bolder text-dark ms-3 mb-0">
+                  LOTS OF PICKUP LOCATIONS
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="our_service"
+        class="d-flex flex-column justify-content-center align-items-center px-5 gap-26 mt-sm-5"
+      >
+        <!-- Header Section  -->
+        <div
+          id="service"
+          class="container-fluid d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="services_header_h1">02</h1>
+          <h2 class="services_header_h2">OUR SERVICES</h2>
+        </div>
+        <!-- Services Section -->
+        <div
+          class="container d-flex justify-content-center align-items-center mt-4 mx-0 px-0"
+        >
+          <div class="row w-100">
+            <div class="col-lg-4 mb-4">
+              <div
+                class="position-relative py-5 bg-light d-flex flex-column justify-content-center align-items-start gap-18"
+              >
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-car-front-fill fs-1"></i>
+                </div>
+                <div class="service-content px-5">
+                  <h4 class="text-second_color fw-bolder">CAR RENTAL</h4>
+                  <p class="text-secondary">
+                    Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                    stet.
+                  </p>
+                </div>
+                <div class="text-white position-absolute service-number">
+                  01
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div
+                class="position-relative py-5 bg_main_color d-flex flex-column justify-content-center align-items-start gap-18"
+              >
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-piggy-bank-fill fs-1"></i>
+                </div>
+                <div class="service-content px-5">
+                  <h4 class="text-white fw-bolder">CAR FINANCING</h4>
+                  <p class="text-secondary">
+                    Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                    stet.
+                  </p>
+                </div>
+                <div class="text-white position-absolute service-number">
+                  02
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div
+                class="position-relative py-5 bg-light d-flex flex-column justify-content-center align-items-start gap-18"
+              >
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-clipboard-check fs-1"></i>
+                </div>
+                <div class="service-content px-5">
+                  <h4 class="text-second_color fw-bolder">CAR INSPECTION</h4>
+                  <p class="text-secondary">
+                    Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                    stet.
+                  </p>
+                </div>
+                <div class="text-white position-absolute service-number">
+                  03
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div
+                class="position-relative py-5 bg-light d-flex flex-column justify-content-center align-items-start gap-18"
+              >
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-wrench-adjustable-circle-fill fs-1"></i>
+                </div>
+                <div class="service-content px-5">
+                  <h4 class="text-second_color fw-bolder">AUTO REPAIRING</h4>
+                  <p class="text-secondary">
+                    Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                    stet.
+                  </p>
+                </div>
+                <div class="text-white position-absolute service-number">
+                  04
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div
+                class="position-relative py-5 bg-light d-flex flex-column justify-content-center align-items-start gap-18"
+              >
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-brush-fill fs-1"></i>
+                </div>
+                <div class="service-content px-5">
+                  <h4 class="text-second_color fw-bolder">AUTO PAINTING</h4>
+                  <p class="text-secondary">
+                    Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                    stet.
+                  </p>
+                </div>
+                <div class="text-white position-absolute service-number">
+                  05
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div
+                class="position-relative py-5 bg-light d-flex flex-column justify-content-center align-items-start gap-18"
+              >
+                <div
+                  class="icon-box d-flex justify-content-center align-items-center bg_second_color text-second_color"
+                >
+                  <i class="bi bi-droplet-fill fs-1"></i>
+                </div>
+                <div class="service-content px-5">
+                  <h4 class="text-second_color fw-bolder">AUTO CLEANING</h4>
+                  <p class="text-secondary">
+                    Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                    stet.
+                  </p>
+                </div>
+                <div class="text-white position-absolute service-number">
+                  06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Offer Section -->
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center mx-0 px-0"
+        >
+          <div class="row w-100">
+            <div class="col-12">
+              <div class="bg-gradient-image text-white text-center py-5">
+                <h1 class="txt_second_color mb-3 services_header_h1">
+                  50% OFF
+                </h1>
+                <p class="mb-4 font-size-16 fw-bold text-white">
+                  SPECIAL OFFER FOR NEW MEMBERS
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    class="btn bg_second_color text-white font-size-8 rounded-0"
+                    >Register Now</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car Ads Section -->
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center mx-0 px-0"
+        >
+          <div class="row w-100 padding-10">
+            <div class="col-sm-6 p-0">
+              <div
+                class="bg_main_color d-flex justify-content-center align-content-center"
+              >
+                <div class="w-50">
+                  <img
+                    src="./assets/pics/3.png"
+                    alt="Mercedes Blue car"
+                    class="img-fluid car-image"
+                  />
+                </div>
+                <div class="text-white p-4 text-end">
+                  <h4 class="font-size-8">WANT TO BE DRIVER?</h4>
+                  <p class="font-size-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus lacinia odio vitae vestibulum vestibulum.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn bg_second_color text-white font-size-8 rounded-0"
+                    >Start Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 p-0" id="second-car-ad">
+              <div
+                class="bg_main_color d-flex justify-content-center align-content-center"
+              >
+                <div class="text-white p-4">
+                  <h4 class="font-size-8">LOOKING FOR A CAR?</h4>
+                  <p class="font-size-6 p-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus lacinia odio vitae vestibulum vestibulum.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn bg_second_color text-white font-size-8 rounded-0"
+                    >Start Now</a
+                  >
+                </div>
+                <div class="w-50">
+                  <img
+                    src="./assets/pics/3.png"
+                    alt="Mercedes Blue car"
+                    class="img-fluid car-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact_us"
+        class="d-flex flex-column justify-content-center align-items-center px-5"
+      >
+        <!-- Header Section  -->
+        <div
+          id="contact"
+          class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5"
+        >
+          <h1 class="services_header_h1">03</h1>
+          <h2 class="services_header_h2">CONTACT US</h2>
+        </div>
+
+        <!-- Form Section  -->
+        <div
+          class="container d-flex justify-content-center align-items-center my-4 mx-0 px-0"
+        >
+          <div class="row w-100">
+            <div class="col-sm-6 mb-4 mb-sm-0">
+              <form
+                class="bg-light p-3 d-flex flex-column justify-content-center align-items-start gap-12 h-100"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center gap-8"
+                >
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type="email"
+                    class="form-control rounded-0"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder="Subject"
+                />
+                <textarea
+                  class="form-control rounded-0"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn rounded-0 bg_second_color text-white font-size-10"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Info Section  -->
+            <div class="col-sm-6">
+              <div
+                class="bg_main_color d-flex flex-column justify-content-center align-items-start py-5 px-4 gap-12 text-white"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center gap-8"
+                >
+                  <i class="bi bi-geo-alt-fill txt_second_color fs-3"></i>
+                  <div>
+                    <h5 class="mb-1 fs-6 fw-bold">Head Office</h5>
+                    <p class="mb-2 font-size-10">123 Street, New York, USA</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center gap-8"
+                >
+                  <i class="bi bi-geo-alt-fill txt_second_color fs-3"></i>
+                  <div>
+                    <h5 class="mb-1 fs-6 fw-bold">Branch Office</h5>
+                    <p class="mb-2 font-size-10">123 Street, New York, USA</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center gap-8"
+                >
+                  <i class="bi bi-envelope-fill txt_second_color fs-3"></i>
+                  <div>
+                    <h5 class="mb-1 fs-6 fw-bold">Customer Service</h5>
+                    <p class="mb-2 font-size-10">email@domain.com</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center gap-8"
+                >
+                  <i class="bi bi-envelope-fill txt_second_color fs-3"></i>
+                  <div>
+                    <h5 class="mb-1 fs-6 fw-bold">HReturn & Refund</h5>
+                    <p class="mb-2 font-size-10">refund@example.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button
+        id="scrollToTopBtn"
+        class="btn bg_second_color rounded-circle position-fixed bottom-0 end-0 m-3"
+        style="display: none"
+      >
+        <i class="bi bi-chevron-double-up fs-3"></i>
+      </button>
+    </main>
+    <footer class="bg_main_color text-light py-3 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              © <span class="txt_second_color">Your Site Name</span>. All Rights
+              Reserved.
+            </p>
+            <p class="small mb-0">
+              Designed by <span class="txt_second_color">HTML Codex</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      // Add event listeners to each nav link
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          // Remove active class from all links
+          navLinks.forEach((link) => link.classList.remove("active"));
+
+          // Add active class to the clicked link
+          this.classList.add("active");
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburgerMenu = document.getElementById("hamburgerMenu");
+        var navbarToggleMenuContent = document.getElementById(
+          "navbarToggleMenuContent"
+        );
+
+        // Show the collapse menu on hover
+        hamburgerMenu.addEventListener("mouseenter", function () {
+          if (!navbarToggleMenuContent.classList.contains("show")) {
+            var bsCollapse = new bootstrap.Collapse(navbarToggleMenuContent);
+            bsCollapse.show();
+          }
+        });
+
+        // Hide the collapse menu when mouse leaves the collapse area
+        navbarToggleMenuContent.addEventListener("mouseleave", function () {
+          if (navbarToggleMenuContent.classList.contains("show")) {
+            var bsCollapse = new bootstrap.Collapse(navbarToggleMenuContent);
+            bsCollapse.hide();
+          }
+        });
+      });
+
+      // Get the button
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopBtn.addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+/* GLOBAL STYLES & VARIABLES */
+:root {
+  --MAIN-COLOR: #22243f;
+  --SECOND-COLOR: #f07817;
+  --THIRD-COLOR: #f1f3f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  min-height: 100vh;
+}
+
+/* MAIN CSS STYLING:CUSTOM CLASSES */
+.top-bar_bg {
+  background-color: #1e2738;
+}
+
+.bg_main_color {
+  background-color: var(--MAIN-COLOR);
+}
+
+.bg_second_color {
+  background-color: var(--SECOND-COLOR);
+}
+
+.txt_second_color {
+  color: var(--SECOND-COLOR);
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: var(--SECOND-COLOR) !important; /* Make the active link orange */
+}
+
+.nav-link {
+  color: #fff !important; /* Default color for non-active links */
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-18 {
+  gap: 18px;
+}
+
+.gap-26 {
+  gap: 26px;
+}
+
+.font-size-6 {
+  font-size: 6px;
+}
+
+.font-size-8 {
+  font-size: 8px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.padding-10 {
+  padding: 0 10px;
+}
+
+.btn-no-hover:hover {
+  background-color: unset !important;
+  color: unset !important;
+  border-color: unset !important;
+  box-shadow: none !important;
+}
+
+.services_header_h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--SECOND-COLOR);
+}
+
+.services_header_h2 {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--MAIN-COLOR);
+  text-wrap: nowrap;
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+}
+
+.service-content {
+  flex-grow: 1;
+}
+
+.service-number {
+  font-size: 52px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+
+.bg-gradient-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 3, 39, 0.9)),
+    url(./assets/pics/2.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.car-image {
+  mix-blend-mode: darken;
+}
+
+#second-car-ad {
+  border-top: 1px solid #000;
+}
+
+#scrollToTopBtn {
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 0.7;
+}
+
+/* FOR SOME EXTRA RESPONSIVE STYLES */
+@media (min-width: 576px) {
+  #right-square {
+    width: 50px;
+    height: 40px;
+    background-color: #1e2738;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    border-top: 1px solid black;
+  }
+
+  #left-square {
+    width: 50px;
+    height: 40px;
+    background-color: #1e2738;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    border-top: 1px solid black;
+  }
+
+  .services_header_h1 {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .services_header_h2 {
+    font-size: 34px;
+    font-weight: 900;
+  }
+
+  .font-size-6 {
+    font-size: 12px;
+  }
+
+  .font-size-8 {
+    font-size: 15px;
+  }
+
+  .font-size-10 {
+    font-size: 16px;
+  }
+
+  .font-size-16 {
+    font-size: 22px;
+  }
+
+  .font-size-22 {
+    font-size: 32px;
+  }
+
+  #second-car-ad {
+    border-left: 1px solid #000;
+    border-top: none;
+  }
+}
